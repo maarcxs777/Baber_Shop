@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="{% static 'css/contatos.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'inicio' %}">
+            <img src="{% static 'img/red clout sem fundo.png' %}" class="logo" alt="Logo">
+        </a>
+    </header>
+
+    <div class="localizado">
+        <span><b>Nosso Endereço:</b> Cidade: São Gonçalo do Amarante, Bairro: Jardins, Rua: Dom Quixote, Número: 1010</span>
+    </div>
+
+    <div class="parceiros">
+        <h2>Torne-se um parceiro</h2>
+        <form action="" method="POST">
+        {% csrf_token %}
+
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome" placeholder="Nome Completo"><br><br>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" placeholder="Telefone"><br><br>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email"><br><br>
+
+        <button type="submit" value="Enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

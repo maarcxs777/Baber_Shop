@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendado</title>
+    <link rel="stylesheet" href="{% static 'css/parceiro.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'inicio' %}">
+            <img src="{% static 'img/red clout sem fundo.png' %}" class="logo" alt="Logo">
+        </a>
+    </header>
+    
+    <div class="agendado">
+        <h1>Embre Entraremos Em Contato</h1>
+        <span>muito obrigado por querer se torna um parceiro da Red Clout Baber & Shop!<br>
+        Clique no botão abaixo para continuar a proveitando os nossos serviços</span>
+        <a href="{% url 'inicio' %}">Clique aqui</a>
+    </div>
+</body>
+</html>

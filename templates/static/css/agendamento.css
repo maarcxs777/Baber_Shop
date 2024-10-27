@@ -1,0 +1,59 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centralizar a logo */
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+/* Formulário */
+.agenda {
+    width: 370px; /* Largura do formulário */
+    margin: 20px auto; /* Centralizar horizontalmente */
+    background-color: #000000; /* Fundo do formulário */
+    color: white; /* Cor do texto */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+label {
+    margin-bottom: 5px; /* Espaçamento abaixo dos labels */
+    display: block; /* Exibir labels como blocos */
+}
+
+input, select {
+    width: 100%; /* Largura completa dos campos */
+    padding: 3px; /* Espaçamento interno dos campos */
+    margin-bottom: 10px; /* Espaçamento abaixo dos campos */
+    border: 1px solid #ccc; /* Borda dos campos */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+button {
+    width: 100%; /* Largura completa do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    background-color: #c23d3d; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Mão ao passar o mouse */
+}
+
+button:hover {
+    background-color: #070707; /* Cor de fundo ao passar o mouse */
+}

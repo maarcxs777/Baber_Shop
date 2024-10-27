@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Clout Barber & Shop</title>
+    <link rel="stylesheet" href="{% static 'css/Inicio.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'inicio' %}">
+            <img src="{% static 'img/red clout sem fundo.png' %}" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'agendamento' %}">Agendamento</a></li>
+                <li><a href="{% url 'produtos' %}">Produtos</a></li>
+                <li><a href="{% url 'contatos' %}">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <footer class="footer">
+        <div>
+            <b></b>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/slide.js' %}"></script>
+</body>
+</html>

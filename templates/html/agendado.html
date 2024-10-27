@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendado</title>
+    <link rel="stylesheet" href="{% static 'css/agendado.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'inicio' %}">
+            <img src="{% static 'img/red clout sem fundo.png' %}" class="logo" alt="Logo">
+        </a>
+    </header>
+    
+    <div class="agendado">
+        <h1>Agendamento Concluído Com Sucesso</h1>
+        <span>Seu agendamento foi realizado com sucesso, estamos ansiosos por sua presença. 
+        Atenciosamente, equipe Red Clout Barber & Shop!<br>
+        Clique no botão abaixo para continuar aproveitando os nossos serviços<br></span>
+        <a href="{% url 'inicio' %}">Clique aqui</a>
+    </div>
+</body>
+</html>
